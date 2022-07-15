@@ -1,28 +1,38 @@
 {
-  "homepage": "https://wiktorkoscielny.github.io/react9",
-  "name": "react-project-13",
+  "name": "react-project-12",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fullcalendar/daygrid": "^5.11.0",
+    "@fullcalendar/interaction": "^5.11.0",
+    "@fullcalendar/react": "^5.11.1",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@reacticons/ionicons": "^6.0.3",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages-deploy": "^0.1.1",
+    "firebase": "^9.9.0",
+    "material-ui": "^0.20.2",
+    "material-ui-icons": "^1.0.0-beta.36",
     "react": "^18.2.0",
     "react-big-calendar": "^1.4.0",
-    "react-calendar": "^3.7.0",
     "react-countup": "^6.3.0",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
-    "react-firebase": "^2.2.8",
+    "react-floating-button-menu": "^2.1.1",
     "react-icons": "^4.4.0",
-    "react-scripts": "^2.1.3",
+    "react-ionicons": "^4.2.0",
+    "react-scripts": "5.0.1",
+    "react-styled-components": "^0.1.11",
+    "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -41,8 +51,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0"
   }
 }
