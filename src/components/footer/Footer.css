@@ -1,0 +1,32 @@
+.footer__container {
+    height: 100vh;
+    margin: 0;
+}
+.footer__content {
+    height: 70vh;
+}
+
+.footer__content form {
+    padding-top: 2em;
+}
+.footer__earnings {
+    text-align: center;
+    padding-top: 5em;
+    color: var(--color-light);
+}
+
+.footer {
+    height: 30vh;
+    bottom: 0;
+    text-align: center;
+    background: var(--color-primary-variant);
+    color: var(--color-light);
+}
+.footer .footer__link a {
+    margin-top: 10px;
+    color: var(--color-bg);
+    text-decoration: none;
+}
+.footer__link {
+    padding-top: 10%;
+}
