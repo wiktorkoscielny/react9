@@ -13,9 +13,13 @@
   .modalContainer {
     width: 100vw;
     height: 40vh;
-    margin-top: 50%;
+    justify-content: center;
+    text-align: center;
     border-radius: 12px;
-    background-color: #2196f3;
+    top: 50%;
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    background-color: var(--color-bg-variant);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
@@ -23,7 +27,7 @@
   }
 
   .modalContainer .footer {
-    background: #2196f3;
+    background: var(--color-bg-variant);
   }
   
   .modalContainer .title {
@@ -78,7 +82,7 @@
   }
 
   .title {
-    color: #2c2c6c;
+    color: #ffffff;
   }
   .titleCloseBtn button {
     color: #222327;

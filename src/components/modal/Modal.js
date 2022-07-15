@@ -26,7 +26,7 @@ function Modal({ setOpenModal, handleDeleteSlot }) {
           >
             Cancel
           </button>
-          <button onClick={(event) => handleDeleteSlot(event)}>Continue</button>
+          <button onClick={(event) => handleDeleteSlot(event)}>Delete</button>
         </div>
       </div>
     </div>
