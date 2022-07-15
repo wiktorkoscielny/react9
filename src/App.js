@@ -22,21 +22,21 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 // firebase
-import { initializeApp } from "firebase/app";
-import {
-  query,
-  onSnapshot,
-  getFirestore,
-  addDoc,
-  collection,
-  doc,
-  deleteDoc,
-} from "firebase/firestore";
-import { firebaseConfig } from "./config";
+// import { initializeApp } from "firebase/app";
+// import {
+//   query,
+//   onSnapshot,
+//   getFirestore,
+//   addDoc,
+//   collection,
+//   doc,
+//   deleteDoc,
+// } from "firebase/firestore";
+// import { firebaseConfig } from "./Config";
 
 // firebase config
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+// const app = initializeApp(firebaseConfig);
+// const db = getFirestore(app);
 
 const locales = {
   "en-US": require("date-fns/locale/en-US"),
@@ -58,29 +58,29 @@ function App() {
   const handleAddEvent = () => {
     setAllEvents([...allEvents, newEvent]);
     // disabled for now to save data writes
-    addDoc(collection(db,'test_fn'), newEvent);
+    // addDoc(collection(db,'test_fn'), newEvent);
   };
   // get data from firebase
-  useEffect(() => {
-    // component mounts
-    const q = query(collection(db, "test_fn"));
-    const unsub = onSnapshot(q, (snap) => {
-      const array = snap.docs.map((doc) => {
-        return {
-          id: doc.id,
-          title: doc.get("title"),
-          start: doc.get("start").toDate(),
-          end: doc.get("end").toDate(),
-          allDay: doc.get("allDay"), //?
-        };
-      });
-      setAllEvents([...array]);
-    });
-    //component unmounts
-    return () => {
-      unsub();
-    };
-  });
+  // useEffect(() => {
+  //   // component mounts
+  //   const q = query(collection(db, "test_fn"));
+  //   const unsub = onSnapshot(q, (snap) => {
+  //     const array = snap.docs.map((doc) => {
+  //       return {
+  //         id: doc.id,
+  //         title: doc.get("title"),
+  //         start: doc.get("start").toDate(),
+  //         end: doc.get("end").toDate(),
+  //         allDay: doc.get("allDay"), //?
+  //       };
+  //     });
+  //     // setAllEvents([...array]);
+  //   });
+  //   //component unmounts
+  //   return () => {
+  //     unsub();
+  //   };
+  // });
   // select event and delete it from state and firebase
   const handleSelected = (event) => {
     setSelected(event);
@@ -93,7 +93,7 @@ function App() {
     setAllEvents([...todos]);
     setModalOpen(false);
     // delete from firebase
-    await deleteDoc(doc(db, 'test_fn', id));
+    // await deleteDoc(doc(db, 'test_fn', id));
   };
   return (
     <div className="container">
