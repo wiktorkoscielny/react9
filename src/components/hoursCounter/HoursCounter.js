@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 // styles 
 import '../../App.css'
 
@@ -12,7 +13,7 @@ export default function SumOfHours(props) {
       <div className='container__counter'>
         <CountUp
           end={sum}
-          duration={5}
+          duration={2}
           preserveValue={sum}
         />
       </div>
