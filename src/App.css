@@ -1,7 +1,6 @@
 .container__form {
   height: 100vh;
 }
-
 form {
   display: flex;
   flex-direction: column;
@@ -20,11 +19,9 @@ textarea {
   margin-left: 10%;
   margin-bottom: 3%;
 }
-
-.container__form > input:nth-child(1) {
+.container__form>input:nth-child(1) {
   margin-top: 5%;
 }
-
 .btn {
   width: max-content;
   display: inline-block;
@@ -38,38 +35,34 @@ textarea {
   transform: translateX(-50%);
   font-weight: 600;
 }
+
 .btn:hover {
   background: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
 }
-
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-bg);
 }
-
 /* calendar */
 .container__calendar {
   height: 100vh;
   margin-top: 2rem;
 }
-
 .rbc-day-bg.rbc-off-range-bg {
   background: rgba(255, 255, 255, 0.1);
 }
 .rbc-day-bg.rbc-today {
   background: rgba(77, 181, 255, 0.1);
 }
-
-.rbc-toolbar > span:nth-child(3) > button {
+.rbc-toolbar>span:nth-child(3)>button {
   color: #ffffff;
 }
-.rbc-toolbar > span:nth-child(3) > button:hover {
+.rbc-toolbar>span:nth-child(3)>button:hover {
   color: black;
 }
-
-.rbc-toolbar > span:nth-child(3) > button.rbc-active {
+.rbc-toolbar>span:nth-child(3)>button.rbc-active {
   background-color: #fff;
   color: black;
 }
@@ -83,11 +76,9 @@ textarea {
   text-align: center;
   margin: auto;
 }
-.rbc-toolbar .rbc-btn-group > button {
+.rbc-toolbar .rbc-btn-group>button {
   color: #ffffff;
 }
-
-
 .container__form__hours {
   text-align: center;
   margin-top: 7em;
@@ -101,7 +92,6 @@ textarea {
   position: relative;
   z-index: -1;
 }
-
 .container__counter {
   color: var(--color-light);
   position: relative;
@@ -110,10 +100,8 @@ textarea {
   transform: translateY(-50%);
   font-size: 2em;
 }
-
 .react-datepicker,
 .react-datepicker__triangle,
 .react-datepicker__month-container {
   width: 100vw;
 }
-

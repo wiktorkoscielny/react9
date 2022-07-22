@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 //styles
 import "./App.css";
@@ -16,7 +16,7 @@ import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
 
 // react-big-callendar
-import { Calendar, dateFnsLocalizer, onSelectEvent } from "react-big-calendar";
+import { Calendar, dateFnsLocalizer} from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -155,5 +155,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
