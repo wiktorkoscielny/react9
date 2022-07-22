@@ -17,6 +17,7 @@
 
 .footer {
     height: 30vh;
+    width: 100vw;
     bottom: 0;
     text-align: center;
     background: var(--color-primary-variant);
@@ -29,4 +30,13 @@
 }
 .footer__link {
     padding-top: 10%;
+}
+
+@media screen and (min-width: 680px) {
+.footer {
+    height: 40vh;
+}
+.footer__link {
+    padding-top: 2%;
+}
 }

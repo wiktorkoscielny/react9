@@ -33,7 +33,7 @@ const Footer = (props) => {
             </div>
             <div className='footer'>
                 <div className='footer__link'>
-                    Created by <a href='https://github.com/wiktorkoscielny' target='_blank' >wiktorkoscielny</a>
+                    Created by <a href='https://github.com/wiktorkoscielny' rel="noopener noreferrer" target='_blank' >wiktorkoscielny</a>
                 </div>
             </div>
         </div>
