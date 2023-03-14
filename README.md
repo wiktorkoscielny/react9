@@ -1,4 +1,4 @@
-# React SPA Calendar App with Firebase 
+# React SPA CRUD Calendar App with Firebase 
 
 ## Table of contents
 * [General info](#general-info)
